@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+     section{
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       width: 100%;
+       height: 100vh;
+       background-image: url(image/me.jpg);
+       background-position: top;
+       background-repeat: no-repeat;
+       background-size: cover;
+       clip-path: circle(0px at center);
+      
+       
+     }
+       
+      h2{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 200px;
+        font-size: 2em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-image: url(image/14.jpg);
+        background-size: cover;
+        color: transparent;
+       -webkit-background-clip: text;
+        z-index: 2;
+     
+
+      } 
+
+      blockquote,#name{
+        font-size: 3em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-image: url(image/14.jpg);
+        background-size: cover;
+        color: transparent;
+       -webkit-background-clip: text;
+        margin-bottom: 10px;
+
+      }
+      blockquote{
+        font-size: 1.5em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-image: url(image/14.jpg);
+        background-size: cover;
+        color: transparent;
+       -webkit-background-clip: text;
+        margin-bottom: 5px;
+        margin-top: 40px;
+
+      }
+      .text{
+        position: relative;
+        top: 200vh;
+        background-color: whitesmoke;
+        padding: 80px ;
+        padding-bottom: 30px;
+      }
+      @media screen and (max-width: 992px)
+      {
+        .text,#foot{
+          top: 150vh;;
+        }
+      }
+      
+      @media screen and (max-width: 600px)
+      {
+        .text,#foot{
+          top: 130vh;;
+        }
+      }
+     
+    </style>
+     </head>
+ <body> 
+    <h2 >Scroll Down to see Profile....</h2>
+    <section class="responsive-image">
+      
+    </section>
+    <div class="text">
+
+
+      <blockquote id="name">ER.RK NANDA</blockquote>
+      <p>Hi! Welcome to you on our Website, I am a CS Department student at <strong>MNIT JAIPUR</strong>.
+      </p>
+
+
+      <blockquote> Languages</blockquote>
+       <li>C</li>
+       <li>C++</li>
+       <li>PYTHON</li>
+       <li>JAVA</li>
+       <li>JAVASCRIPT</li>
+       <li>PHP</li>
+       <li>MYSQL</li>
+       <li>HTML</li>
+       <li>CSS, Materialize</li>
+       
+       
+      <blockquote> Skills </blockquote>
+     <li>Android Developer</li>
+     <li>Full-Stack Web Developer</li>
+     <li>Desktop GUI Application</li>
+
+     <blockquote> Projects </blockquote>
+     <li>Android App: Tic-Tac-Toe Game, Farmer Helper </li>
+     <li>Website: www.rknanda.online (Like:- www.pixels.com) </li>
+     <li>Desktop GUI App: YouTube Video Downloader (PYTHON), Calculator (JAVA)</li>
+     <li>Using Python: Snake Game, Helicopter Crash Game</li>
+     <li>Chrome Dino Game Automation</li>
+     <li>Web Scraping Tools</li>
+    
+
+      <blockquote> Follow On </blockquote>
+      <p>
+        <a href="https://www.facebook.com/rohit.nanda.7923"><i class="btn btn-floating fa fa-facebook-official small blue-text white"></i></a>
+        <a href="https://www.instagram.com/er.rknanda_hmh/"><i class="btn btn-floating fa fa-instagram small red-text white"></i></a>
+        <a href="https://twitter.com/RohitkumarNand6"><i class="btn btn-floating fa fa-twitter-square small blue-text white"></i></a>
+      </p>  
+     
+
+      <blockquote>Contact</blockquote>
+      <p>Mobile No. 7340073383<br>
+      Email ID: Smileynanda99@gmail.com</p>
+
+
+    </div>
+
+  </body>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/materialize.js">
+    
+      
+  </script>
+  <script>
+          $('document').ready(function(){
+            var section = document.querySelector('section');
+            window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            section.style.clipPath = "circle("+ value +"px at center)"
+            });
+          });
+  </script>
+</html>
+      
